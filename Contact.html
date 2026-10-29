@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Tensaye Daaniel.">
+    <title>Contact | Tensaye Daaniel</title>
+</head>
+<body>
+    <header>
+        <p><a href="Index.html">Tensaye Daaniel</a></p>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Index.html#about">About</a></li>
+                <li><a href="MyMedia.html">Interests &amp; Media</a></li>
+                <li><a href="Index.html#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Me</h1>
+        <p>Feel free to leave a message.</p>
+
+        <form>
+            <p>
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+            </p>
+            <p>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" rows="6" cols="40" required></textarea>
+            </p>
+            <fieldset>
+                <legend>Rate this website</legend>
+                <label><input type="radio" name="rating" value="1"> 1</label>
+                <label><input type="radio" name="rating" value="2"> 2</label>
+                <label><input type="radio" name="rating" value="3"> 3</label>
+                <label><input type="radio" name="rating" value="4"> 4</label>
+                <label><input type="radio" name="rating" value="5"> 5</label>
+            </fieldset>
+            <p>
+                <label for="feedback">Overall impression</label><br>
+                <select id="feedback" name="feedback">
+                    <option value="">Choose an option</option>
+                    <option value="excellent">Excellent</option>
+                    <option value="good">Good</option>
+                    <option value="needs-improvement">Needs improvement</option>
+                </select>
+            </p>
+            <button type="submit">Send message</button>
+        </form>
+
+        <p>Note: This form needs a server-side handler to deliver messages.</p>
+    </main>
+
+    <footer>
+        <p><a href="Index.html">Back to home</a> | <a href="MyMedia.html">Explore my interests</a></p>
+    </footer>
+</body>
+</html>
