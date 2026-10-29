@@ -1,22 +1,22 @@
 # Tensaye Daaniel — Portfolio
 
-A simple portfolio website built with HTML only. It uses no CSS or JavaScript.
-
 ## Pages
 
-- `Index.html` — introduction, education, skills, and projects
-- `MyMedia.html` — interests and a video
-- `Contact.html` — contact and website feedback form
+- `index.html` — homepage and navigation to all portfolio pages
+- `about.html` — biography, education, interests, quotations, and relevant dates
+- `skills.html` — education table, skills, learning progress, definitions, and expandable sections
+- `projects.html` — project and achievement showcase with figures, nested lists, and a downloadable page
+- `media.html` — interests, local audio and video, and an embedded YouTube video
+- `contact.html` — contact and feedback form with browser validation
 
-## View the portfolio
+Open `index.html` in a browser to start. Keep the existing profile image and video in the same folder as the HTML pages.
 
-Open `Index.html` in a web browser. Use the navigation links to visit the other pages.
+## Media to add
 
-## Local media
+- `focus-session-2026-10-22.png` — profile image used on the homepage and projects page
+- `Screen Recording 2026-10-26 195704.mp4` — local video on the media page
+- `interest-audio.mp3` — add an MP3 file with this name to enable the audio player
 
-Keep these files in the same folder as the HTML pages so they can be displayed:
+Enrollment and graduation dates, and a local audio file, have not been supplied. Add `interest-audio.mp3` beside the HTML files to enable the audio player.
 
-- `focus-session-2026-10-22.png` — profile image
-- `Screen Recording 2026-10-26 195704.mp4` — video on the interests page
-
-The contact form is currently front-end only. Submitting it will not send or store a message until a server-side form handler is connected.
+The contact form demonstrates HTML form controls and validation. It does not send or store submissions until a server-side handler is connected.

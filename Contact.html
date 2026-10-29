@@ -4,63 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact Tensaye Daaniel.">
-    <title>Contact | Tensaye Daaniel</title>
+    <title>Contact Me | Tensaye Daaniel</title>
 </head>
 <body>
     <header>
-        <p><a href="Index.html">Tensaye Daaniel</a></p>
+        <p><a href="index.html">Tensaye Daaniel</a></p>
         <nav aria-label="Main navigation">
             <ul>
-                <li><a href="Index.html">Home</a></li>
-                <li><a href="Index.html#about">About</a></li>
-                <li><a href="MyMedia.html">Interests &amp; Media</a></li>
-                <li><a href="Index.html#projects">Projects</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="skills.html">Skills and Education</a></li>
+                <li><a href="projects.html">Projects and Achievements</a></li>
+                <li><a href="media.html">My Media and Interests</a></li>
+                <li><a href="contact.html" aria-current="page">Contact Me</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <h1>Contact Me</h1>
-        <p>Feel free to leave a message.</p>
-
-        <form>
-            <p>
-                <label for="name">Name</label><br>
-                <input type="text" id="name" name="name" autocomplete="name" required>
-            </p>
-            <p>
-                <label for="email">Email</label><br>
-                <input type="email" id="email" name="email" autocomplete="email" required>
-            </p>
-            <p>
-                <label for="message">Message</label><br>
-                <textarea id="message" name="message" rows="6" cols="40" required></textarea>
-            </p>
+        <p>Use this form to share a message or website feedback. Fields marked as required must be completed.</p>
+        <form method="post" enctype="multipart/form-data">
             <fieldset>
-                <legend>Rate this website</legend>
+                <legend>Your details</legend>
+                <p>
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="name" autocomplete="name" minlength="2" maxlength="80" required>
+                </p>
+                <p>
+                    <label for="email">Email address</label><br>
+                    <input type="email" id="email" name="email" autocomplete="email" placeholder="name@example.com" required>
+                </p>
+                <p>
+                    <label for="phone">Phone number (optional)</label><br>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" pattern="[0-9+() -]{7,20}" title="Enter 7 to 20 digits, spaces, or phone punctuation.">
+                </p>
+                <p>
+                    <label for="website">Your website (optional)</label><br>
+                    <input type="url" id="website" name="website" placeholder="https://example.com">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your message</legend>
+                <p>
+                    <label for="subject">Subject</label><br>
+                    <input type="text" id="subject" name="subject" list="subject-options" maxlength="100" required>
+                    <datalist id="subject-options">
+                        <option value="Project inquiry">
+                        <option value="Portfolio feedback">
+                        <option value="Other">
+                    </datalist>
+                </p>
+                <p>
+                    <label for="message">Message</label><br>
+                    <textarea id="message" name="message" rows="7" cols="45" minlength="10" maxlength="2000" placeholder="Write your message here..." required></textarea>
+                </p>
+                <p>
+                    <label for="reply-by">Preferred reply method</label><br>
+                    <select id="reply-by" name="reply-by" required>
+                        <option value="">Choose one</option>
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="attachment">Attach a file (optional)</label><br>
+                    <input type="file" id="attachment" name="attachment" accept=".pdf,.png,.jpg,.jpeg">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Website feedback (optional)</legend>
+                <p>Rate this website:</p>
                 <label><input type="radio" name="rating" value="1"> 1</label>
                 <label><input type="radio" name="rating" value="2"> 2</label>
                 <label><input type="radio" name="rating" value="3"> 3</label>
                 <label><input type="radio" name="rating" value="4"> 4</label>
                 <label><input type="radio" name="rating" value="5"> 5</label>
+                <p>
+                    <label for="recommend">Would you recommend this portfolio?</label><br>
+                    <select id="recommend" name="recommend">
+                        <option value="">Choose one</option>
+                        <option value="yes">Yes</option>
+                        <option value="maybe">Maybe</option>
+                        <option value="no">No</option>
+                    </select>
+                </p>
+                <p>
+                    <label><input type="checkbox" name="follow-up" value="yes"> I would like a follow-up.</label>
+                </p>
             </fieldset>
-            <p>
-                <label for="feedback">Overall impression</label><br>
-                <select id="feedback" name="feedback">
-                    <option value="">Choose an option</option>
-                    <option value="excellent">Excellent</option>
-                    <option value="good">Good</option>
-                    <option value="needs-improvement">Needs improvement</option>
-                </select>
-            </p>
-            <button type="submit">Send message</button>
-        </form>
 
-        <p>Note: This form needs a server-side handler to deliver messages.</p>
+            <p>
+                <button type="submit">Send message</button>
+                <button type="reset">Clear form</button>
+            </p>
+        </form>
+        <p>This HTML form is a front-end example. It does not send or store submissions until a server-side form handler is connected.</p>
     </main>
 
     <footer>
-        <p><a href="Index.html">Back to home</a> | <a href="MyMedia.html">Explore my interests</a></p>
+        <p><a href="index.html">Home</a> | <a href="about.html">About me</a></p>
     </footer>
 </body>
 </html>

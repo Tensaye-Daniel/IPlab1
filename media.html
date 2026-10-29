@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interests and media from Tensaye Daaniel's portfolio.">
+    <title>My Media and Interests | Tensaye Daaniel</title>
+</head>
+<body>
+    <header>
+        <p><a href="index.html">Tensaye Daaniel</a></p>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="skills.html">Skills and Education</a></li>
+                <li><a href="projects.html">Projects and Achievements</a></li>
+                <li><a href="media.html" aria-current="page">My Media and Interests</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>My Media and Interests</h1>
+        <section aria-labelledby="interests-heading">
+            <h2 id="interests-heading">My Interests</h2>
+            <ul>
+                <li>Playing chess</li>
+                <li>Reading books</li>
+                <li>Watching movies</li>
+                <li>Learning new things</li>
+            </ul>
+            <p>Explore <a href="https://www.chess.com/">online chess</a> and discover books at <a href="https://www.goodreads.com/">Goodreads</a>.</p>
+        </section>
+
+        <section aria-labelledby="audio-heading">
+            <h2 id="audio-heading">Audio</h2>
+            <p>Place an audio file named <code>interest-audio.mp3</code> beside these pages to play it here.</p>
+            <audio controls preload="metadata">
+                <source src="interest-audio.mp3" type="audio/mpeg">
+                Your browser does not support audio. <a href="interest-audio.mp3">Open the audio file</a> instead.
+            </audio>
+        </section>
+
+        <section aria-labelledby="video-heading">
+            <h2 id="video-heading">My Video</h2>
+            <video controls preload="metadata" width="640">
+                <source src="Screen%20Recording%202026-10-26%20195704.mp4" type="video/mp4">
+                Your browser does not support HTML video. You can
+                <a href="Screen%20Recording%202026-10-26%20195704.mp4">open the video file</a>
+                instead.
+            </video>
+        </section>
+
+        <section aria-labelledby="youtube-heading">
+            <h2 id="youtube-heading">Learning About HTML</h2>
+            <p>This embedded YouTube video is an HTML learning resource.</p>
+            <iframe
+                src="https://www.youtube-nocookie.com/embed/UB1O30fR-EE"
+                title="HTML tutorial on YouTube"
+                width="560"
+                height="315"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+            <p><a href="https://www.youtube.com/watch?v=UB1O30fR-EE">Watch the HTML tutorial on YouTube</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Home</a> | <a href="contact.html">Contact me</a></p>
+    </footer>
+</body>
+</html>
